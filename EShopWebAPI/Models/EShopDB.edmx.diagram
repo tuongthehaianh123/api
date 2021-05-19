@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="735c56ffc5354cf3914087ef5b958b1e" Name="Diagram1">
+        <EntityTypeShape EntityType="EShopDBModel.Category" Width="1.5" PointX="0.75" PointY="1.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="EShopDBModel.Customer" Width="1.5" PointX="0.75" PointY="4.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="EShopDBModel.OrderDetail" Width="1.5" PointX="5.25" PointY="1" IsExpanded="true" />
+        <EntityTypeShape EntityType="EShopDBModel.Order" Width="1.5" PointX="3" PointY="5" IsExpanded="true" />
+        <EntityTypeShape EntityType="EShopDBModel.Product" Width="1.5" PointX="3" PointY="1" IsExpanded="true" />
+        <AssociationConnector Association="EShopDBModel.FK_Products_Categories" ManuallyRouted="false" />
+        <AssociationConnector Association="EShopDBModel.fk_OrderCustomer" ManuallyRouted="false" />
+        <AssociationConnector Association="EShopDBModel.fk_Order_Details" ManuallyRouted="false" />
+        <AssociationConnector Association="EShopDBModel.fk_Order_Product" ManuallyRouted="false" />
+        <EntityTypeShape EntityType="EShopDBModel.Account" Width="1.5" PointX="7.625" PointY="9.125" />
+        <EntityTypeShape EntityType="EShopDBModel.Function" Width="1.5" PointX="5.375" PointY="9.625" />
+        <EntityTypeShape EntityType="EShopDBModel.Permission" Width="1.5" PointX="7.625" PointY="5.5" />
+        <EntityTypeShape EntityType="EShopDBModel.Role" Width="1.5" PointX="5.375" PointY="6.5" />
+        <AssociationConnector Association="EShopDBModel.FK_Accounts_Roles" />
+        <AssociationConnector Association="EShopDBModel.FK_Permissions_Functions" />
+        <AssociationConnector Association="EShopDBModel.FK_Permissions_Roles" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
